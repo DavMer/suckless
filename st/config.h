@@ -153,12 +153,14 @@ static const char *colorname[] = {
  * foreground, background, cursor, reverse cursor, selection
  */
 unsigned int defaultfg = 258;
-unsigned int defaultbg = 259;
+//unsigned int defaultbg = 259;
+unsigned int defaultbg = 0;
 unsigned int defaultcs = 256;
 //static unsigned int defaultrcs = 257;
-static unsigned int defaultrcs = 256;
+static unsigned int defaultrcs = 257;
 
-unsigned int selectionbg = 257;
+//unsigned int selectionbg = 257;
+unsigned int selectionbg = 0;
 unsigned int selectionfg = 7;
 /* If 0 use selectionfg as foreground in order to have a uniform foreground-color */
 /* Else if 1 keep original foreground-color of each cell => more colors :) */
@@ -171,7 +173,7 @@ static int ignoreselfg = 1;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 6;
+static unsigned int cursorshape = 2;
 
 /*
  * Default columns and rows numbers
