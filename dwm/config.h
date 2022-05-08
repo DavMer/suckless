@@ -99,7 +99,7 @@ static Key keys[] = {
     { MODKEY,                       XK_b,      shiftview,      {.i = -1}  },
     { MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
     { MODKEY|ShiftMask,             XK_minus,  setgaps,        {.i = +1 } },
-    { MODKEY|ControlMask,           XK_equal,  setgaps,        {.i = 0  } },
+    { MODKEY|ControlMask,           XK_minus,  setgaps,        {.i = 0  } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
